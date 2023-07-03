@@ -12,7 +12,6 @@ public class Homework2_2 {
     static ArrayList<Integer> bubbleSort(ArrayList<Integer> arr) throws SecurityException, IOException {
         Logger logger = Logger.getLogger(Homework2_2.class.getName());
         FileHandler fh = new FileHandler("output.log");
-
         logger.addHandler(fh);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
