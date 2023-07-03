@@ -24,9 +24,7 @@ public class Homework2_1 {
     }
 
     public static List<String> get_files() {
-
         File dir = new File(".");
-
         File[] files;
         try {
             files = dir.listFiles();
@@ -36,12 +34,10 @@ public class Homework2_1 {
         }
         if (files == null)
             return null;
-
         List<String> list = new ArrayList<String>();
         for (File file : files)
             if (file.isFile())
                 list.add(file.getName());
-
         return list;
     }
 }
